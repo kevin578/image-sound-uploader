@@ -14,6 +14,7 @@ const ImageContainer = styled.div`
 const Image = styled.img`
   display: block;
   margin-bottom: 25px;
+  width: 200px;
 `;
 
 const NoImageMessage = styled.p`
@@ -112,7 +113,7 @@ class App extends Component {
       .ref()
       .child(refName);
     ref.put(file, metadata).then(function(snapshot) {
-      console.log(snapshot);
+      window.location.reload();
     });
 
 
